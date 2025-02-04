@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AEM Navigator</title>
+    <link href="css\all.min.css" rel="stylesheet">
+    <link href="popup.css" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="logo">
+                <i class="fas fa-cube"></i>
+                <h1>AEM Navigator</h1>
+            </div>
+            <div class="header-actions">
+                <!-- Dark Mode Toggle -->
+                <label class="switch">
+                    <input id="darkMode" type="checkbox"/>
+                    <span class="slider"></span>
+                    <span class="switch-label">Dark Mode</span>
+                </label>
+                <!-- New Tab Toggle -->
+                <label class="switch">
+                    <input id="baction" type="checkbox"/>
+                    <span class="slider"></span>
+                    <span class="switch-label">New Tab</span>
+                </label>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Quick Actions -->
+            <section class="card">
+                <h2><i class="fas fa-bolt"></i> Quick Actions</h2>
+                <div class="action-grid">
+                    <button id="disabled-mode" class="action-btn">
+                        <i class="fas fa-eye-slash"></i>
+                        <span>Disabled Mode</span>
+                    </button>
+                    <button id="edit-mode" class="action-btn">
+                        <i class="fas fa-edit"></i>
+                        <span>Edit Mode</span>
+                    </button>
+                    <button id="page-properties" class="action-btn">
+                        <i class="fas fa-cog"></i>
+                        <span>Properties</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Debug Tools -->
+            <section class="card">
+                <h2><i class="fas fa-bug"></i> Debug Tools</h2>
+                <div class="action-grid">
+                    <button id="in-crx-de" class="action-btn">
+                        <i class="fas fa-code"></i>
+                        <span>CRXDE</span>
+                    </button>
+                    <button id="debug-clientlibs" class="action-btn">
+                        <i class="fas fa-file-code"></i>
+                        <span>Client Libraries</span>
+                    </button>
+                    <button id="debug-layout" class="action-btn">
+                        <i class="fas fa-table"></i>
+                        <span>Layout</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Navigation -->
+            <section class="card">
+                <h2><i class="fas fa-compass"></i> Navigation</h2>
+                <div class="nav-grid">
+                    <div class="nav-group">
+                        <h3>Core</h3>
+                        <a href="/aem/start.html" class="nav-link generic-func">
+                            <i class="fas fa-home"></i> Welcome
+                        </a>
+                        <a href="/crx/de/index.jsp#" class="nav-link generic-func">
+                            <i class="fas fa-code"></i> CRXDE
+                        </a>
+                        <a href="/crx/packmgr/index.jsp" class="nav-link generic-func">
+                            <i class="fas fa-box"></i> Packages
+                        </a>
+                    </div>
+
+                    <div class="nav-group">
+                        <h3>Content</h3>
+                        <a href="/assets.html/content/dam" class="nav-link generic-func">
+                            <i class="fas fa-images"></i> Assets
+                        </a>
+                        <a href="/sites.html/content" class="nav-link generic-func">
+                            <i class="fas fa-sitemap"></i> Sites
+                        </a>
+                        <a href="/libs/wcm/core/content/sites/templates.html/conf" class="nav-link generic-func">
+                            <i class="fas fa-file-alt"></i> Templates
+                        </a>
+                    </div>
+
+                    <div class="nav-group">
+                        <h3>System</h3>
+                        <a href="/system/console/bundles" class="nav-link generic-func">
+                            <i class="fas fa-cubes"></i> Bundles
+                        </a>
+                        <a href="/system/console/configMgr" class="nav-link generic-func">
+                            <i class="fas fa-sliders-h"></i> Config
+                        </a>
+                        <a href="/system/console/slinglog" class="nav-link generic-func">
+                            <i class="fas fa-file-medical-alt"></i> Logs
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tools -->
+            <section class="card">
+                <h2><i class="fas fa-tools"></i> Tools</h2>
+                <div class="tools-grid">
+                    <a href="/apps/groovyconsole.html" class="tool-btn generic-func">
+                        <i class="fas fa-terminal"></i>
+                        <span>Groovy Console</span>
+                    </a>
+                    <a href="/libs/cq/i18n/translator.html" class="tool-btn generic-func">
+                        <i class="fas fa-language"></i>
+                        <span>i18n</span>
+                    </a>
+                    <a href="/libs/cq/search/content/querydebug.html" class="tool-btn generic-func">
+                        <i class="fas fa-search"></i>
+                        <span>Query Builder</span>
+                    </a>
+                    <a href="/useradmin" class="tool-btn generic-func">
+                        <i class="fas fa-users"></i>
+                        <span>Users</span>
+                    </a>
+                    <a href="/miscadmin" class="tool-btn generic-func">
+                        <i class="fas fa-cogs"></i>
+                        <span>Misc Admin</span>
+                    </a>
+                    <a href="/system/console/jmx" class="tool-btn generic-func">
+                        <i class="fas fa-chart-line"></i>
+                        <span>JMX</span>
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
