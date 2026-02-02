@@ -1,6 +1,6 @@
 # AEM Helper Extension
 
-A Chrome extension designed to enhance the Adobe Experience Manager (AEM) development workflow. This extension provides quick access to commonly used AEM tools, debug modes, and navigation shortcuts directly from your browser.
+A Chrome/Edge extension designed to enhance the Adobe Experience Manager (AEM) development workflow. This extension provides quick access to commonly used AEM tools, debug modes, and navigation shortcuts directly from your browser.
 
 ## 🌟 Features
 
@@ -13,6 +13,11 @@ A Chrome extension designed to enhance the Adobe Experience Manager (AEM) develo
 - **CRXDE**: Open current page in CRXDE Lite for content exploration
 - **Client Libraries**: Enable client library debugging mode
 - **Layout Debug**: Activate layout debugging for component troubleshooting
+
+### Component Detail (CRX Button)
+- When editing an AEM page, a **CRX button** appears in the component toolbar
+- Click to instantly open the selected component's node in CRXDE Lite
+- Perfect for quickly inspecting component properties and content
 
 ### Navigation
 Quick access to essential AEM interfaces organized by category:
@@ -44,6 +49,7 @@ Additional development and administration tools:
 ### Settings
 - **Dark Mode**: Toggle between light and dark themes for comfortable viewing
 - **New Tab**: Choose whether to open links in a new tab or current tab
+- **CRX Button**: Enable/disable the component toolbar CRX button
 
 ## 📦 Installation
 
@@ -145,7 +151,14 @@ Contributions are welcome! If you'd like to contribute:
 
 ## 📝 Version History
 
-### 0.1.0 (Current)
+### 0.2.0 (Current)
+- Added Component Detail feature (CRX Button on component toolbar)
+- Performance optimizations
+- All settings default to enabled
+- Compact header design
+- Smart path detection for CRXDE navigation from Properties page
+
+### 0.1.0
 - Initial release
 - Quick Actions for mode switching
 - Debug tools integration
