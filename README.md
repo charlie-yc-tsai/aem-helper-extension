@@ -54,7 +54,7 @@ Additional development and administration tools:
 ## 📦 Installation
 
 ### From Chrome Web Store
-1. Visit the [Chrome Web Store](#) (link to be added when published)
+1. Visit the [Chrome Web Store](https://chromewebstore.google.com/detail/aem-helper/enmafbfbckfhkmcgonnclmahnbhkioem)
 2. Click "Add to Chrome"
 3. Confirm the installation
 
